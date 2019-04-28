@@ -73,7 +73,7 @@
                     <!-- Added wordpress -->
                     <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
                     <!-- Added wordpress -->
-                    <nav class="menu">
+                    <!--<nav class="menu">
                         <a href="#" class="menu__item menu__item-1">
                             <p class="menu__item-text menu__item-text-1">Главная</p>
                         </a>
@@ -92,9 +92,10 @@
                         <a href="#" class="menu__item menu__item-6">
                             <p class="menu__item-text menu__item-text_border">Контакты</p>
                         </a>
-                    </nav>
+                    </nav>-->
                 </div>
-            </section>            <section class="breadcrumbs">
+            </section>            
+            <section class="breadcrumbs">
                 <h2>breadcrumbs</h2>
                 <div class="breadcrumbs-wrapper">
                     <div class="breadcrumbs-container">
@@ -107,16 +108,16 @@
                 <h2>Tours description</h2>
                 <div class="wrapper">
                     <div class="tours-container">
-                        <p class="tours-description__header">Pegasus luxury services</p>
+                        <!--<p class="tours-description__header">Pegasus luxury services</p>MyClass-->
                         <!-- Added wordpress -->
-                        <p><?php bloginfo('name'); ?></p>
+                        <p class="tours-description__header"><?php bloginfo('name'); ?></p>
                         <!-- Added wordpress -->
                         <div>
                             <hr class="decorate-line-tours decorate-line-tours_before"/>
                             <!-- Added wordpress -->
-                            <p><?php bloginfo('description'); ?></p>
+                            <p class="tours-description__header-tours"><?php bloginfo('description'); ?></p>
                             <!-- Added wordpress -->
-                            <p class="tours-description__header-tours">Экскурсии</p>
+                            <!--<p class="tours-description__header-tours">Экскурсии</p>-->
                             <!-- Added wordpress -->
                             <?php
                                 if ( is_active_sidebar( 'title-paragraph-1' ) ) {
@@ -128,11 +129,11 @@
                             <!-- Added wordpress -->
                             <hr class="decorate-line-tours decorate-line-tours_after"/>
                         </div>
-                        <div>
+                        <!--<div>
                             <p class="tours-description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                                 aliquip ex ea commodo consequat.</p>
                             <p class="tours-description__text tours-description__text_bottom">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt.</p>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </section>            <section class="tours">

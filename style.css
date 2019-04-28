@@ -1218,4 +1218,51 @@ img {
   .copyright a {
     color: #9a9a9a; } }
 
+.menu {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  width: 100%;
+padding-left: 0;
+  line-height: 1.4em; }
+
+.menu-item {
+    font-family: 'Romul', serif;
+    display: inline-block;
+    background-color: #2f2c34;
+    list-style-type: none;
+max-width: 205px;
+    width: 100%;
+
+border-right: 1px solid #d0aa8c;
+    
+    vertical-align: middle;
+    text-align: center;
+    padding: 0; }
+
+.menu-item > a {
+display: inline-block;
+    
+    color: white;
+    font-size: 0.9375em;
+    font-family: 'Romul', serif; }
+
+.menu-item:last-child {
+  border-right: none;
+}
+
+.menu-item:nth-child(3) {
+max-width: 235px;
+width: 100%;
+}
+
+.menu-item:nth-child(4) {
+max-width: 215px;
+width: 100%;
+}
+
+
+
+
 /*# sourceMappingURL=../css/app.css.map */
