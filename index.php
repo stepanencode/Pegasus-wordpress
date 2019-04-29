@@ -70,29 +70,7 @@
             <section class="page-menu">
                 <h2>Main-menu</h2>
                 <div class="wrapper-nav">
-                    <!-- Added wordpress -->
                     <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-                    <!-- Added wordpress -->
-                    <!--<nav class="menu">
-                        <a href="#" class="menu__item menu__item-1">
-                            <p class="menu__item-text menu__item-text-1">Главная</p>
-                        </a>
-                        <a href="#" class="menu__item">
-                            <p class="menu__item-text">Услуги</p>
-                        </a>
-                        <a href="#" class="menu__item menu__item-3">
-                            <p class="menu__item-text">Автопарк</p>
-                        </a>
-                        <a href="#" class="menu__item menu__item-4"
-                        ><p class="menu__item-text">События</p>
-                        </a>
-                        <a href="#" class="menu__item menu__item-5">
-                            <p class="menu__item-text">О нас</p>
-                        </a>
-                        <a href="#" class="menu__item menu__item-6">
-                            <p class="menu__item-text menu__item-text_border">Контакты</p>
-                        </a>
-                    </nav>-->
                 </div>
             </section>            
             <section class="breadcrumbs">
@@ -108,17 +86,10 @@
                 <h2>Tours description</h2>
                 <div class="wrapper">
                     <div class="tours-container">
-                        <!--<p class="tours-description__header">Pegasus luxury services</p>MyClass-->
-                        <!-- Added wordpress -->
                         <p class="tours-description__header"><?php bloginfo('name'); ?></p>
-                        <!-- Added wordpress -->
                         <div>
                             <hr class="decorate-line-tours decorate-line-tours_before"/>
-                            <!-- Added wordpress -->
                             <p class="tours-description__header-tours"><?php bloginfo('description'); ?></p>
-                            <!-- Added wordpress -->
-                            <!--<p class="tours-description__header-tours">Экскурсии</p>-->
-                            <!-- Added wordpress -->
                             <?php
                                 if ( is_active_sidebar( 'title-paragraph-1' ) ) {
                             ?>
@@ -126,113 +97,19 @@
                                 <?php dynamic_sidebar( 'title-paragraph-1' ); ?>
                             </div>
                             <?php } ?>
-                            <!-- Added wordpress -->
                             <hr class="decorate-line-tours decorate-line-tours_after"/>
                         </div>
-                        <!--<div>
-                            <p class="tours-description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip ex ea commodo consequat.</p>
-                            <p class="tours-description__text tours-description__text_bottom">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt.</p>
-                        </div>-->
                     </div>
                 </div>
             </section>            <section class="tours">
                 <h2>Tours</h2>
                 <div class="wrapper">
                     <div class="tours-wrap">
-                        <!-- Added wordpress -->
                         <?php
                             if ( have_posts() ) : while ( have_posts() ) : the_post();
                                 get_template_part( 'excursion', get_post_format() );
                             endwhile; endif;
                         ?>
-                        <!-- Added wordpress -->
-                    <!--    <div class="tour-container">
-                            <picture class="tours-image">
-                                <source srcset="<?php echo get_bloginfo('template_directory'); ?>/img/towers.png 1x, <?php echo get_bloginfo('template_directory'); ?>/img/retina/towers@2x.png 2x">
-                                <img src="<?php echo get_bloginfo('template_directory'); ?>/img/towers.png" alt="towers">
-                            </picture>
-                            <p class="tour-title">elevate you experience</p>
-                            <hr class="decorate-line-tour"/>
-                            <p class="tour__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <p class="tour__text tour__text_second">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                            <button class="btn btn-more">
-                                <span class="btn__text ">Подробнее</span>
-                            </button>
-                        </div>
-                        <div class="tour-container">
-                            <picture class="tours-image">
-                                <source srcset="<?php echo get_bloginfo('template_directory'); ?>/img/plain.png 1x, <?php echo get_bloginfo('template_directory'); ?>/img/retina/plain@2x.png 2x">
-                                <img src="<?php echo get_bloginfo('template_directory'); ?>/img/plain.png" alt="plain">
-                            </picture>
-                            <p class="tour-title">FARNBOROUGH Airshow 2018</p>
-                            <hr class="decorate-line-tour"/>
-                            <p class="tour__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <p class="tour__text tour__text_second">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                            <button class="btn btn-more">
-                                <span class="btn__text ">Подробнее</span>
-                            </button>
-                        </div>
-                        <div class="tour-container">
-                            <a href="#">
-                            <picture class="tours-image">
-                                <source srcset="<?php echo get_bloginfo('template_directory'); ?>/img/sea.png 1x, <?php echo get_bloginfo('template_directory'); ?>/img/retina/sea@2x.png 2x">
-                                <img src="<?php echo get_bloginfo('template_directory'); ?>/img/sea.png" alt="sea">
-                            </picture>
-                            </a>
-                            <p class="tour-title">regatta in england</p>
-                            <hr class="decorate-line-tour"/>
-                            <p class="tour__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <p class="tour__text tour__text_second">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                            <button class="btn btn-more">
-                                <span class="btn__text ">Подробнее</span>
-                            </button>
-                        </div>
-                        <div class="tour-container">
-                            <a href="#">
-                            <picture class="tours-image">
-                                <source srcset="<?php echo get_bloginfo('template_directory'); ?>/img/car.png 1x, <?php echo get_bloginfo('template_directory'); ?>/img/retina/car@2x.png 2x">
-                                <img src="<?php echo get_bloginfo('template_directory'); ?>/img/car.png" alt="car">
-                            </picture>
-                                </a>
-                            <p class="tour-title">silverstone</p>
-                            <hr class="decorate-line-tour"/>
-                            <p class="tour__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <p class="tour__text tour__text_second">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                            <button class="btn btn-more">
-                                <span class="btn__text ">Подробнее</span>
-                            </button>
-                        </div>
-                        <div class="tour-container">
-                            <a href="#">
-                            <picture class="tours-image">
-                                <source srcset="<?php echo get_bloginfo('template_directory'); ?>/img/game.png 1x, <?php echo get_bloginfo('template_directory'); ?>/img/retina/game@2x.png 2x">
-                                <img src="<?php echo get_bloginfo('template_directory'); ?>/img/game.png" alt="game">
-                            </picture>
-                            </a>
-                            <p class="tour-title">wimbledon</p>
-                            <hr class="decorate-line-tour"/>
-                            <p class="tour__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <p class="tour__text tour__text_second">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                            <button class="btn btn-more">
-                                <span class="btn__text ">Подробнее</span>
-                            </button>
-                        </div>
-                        <div class="tour-container">
-                            <a href="#">
-                            <picture class="tours-image">
-                                <source srcset="<?php echo get_bloginfo('template_directory'); ?>/img/mercedes.png 1x, <?php echo get_bloginfo('template_directory'); ?>/img/retina/mercedes@2x.png 2x">
-                                <img src="<?php echo get_bloginfo('template_directory'); ?>/img/mercedes.png" alt="mercedes">
-                            </picture>
-                            </a>
-                            <p class="tour-title">Lorem ipsum</p>
-                            <hr class="decorate-line-tour"/>
-                            <p class="tour__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <p class="tour__text tour__text_second">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                            <button class="btn btn-more">
-                                <span class="btn__text ">Подробнее</span>
-                            </button>
-                        </div>-->
                     </div>
                 </div>
             </section>       
@@ -242,42 +119,10 @@
             <div class="background-city_black"></div>
             <div class="footer-container">
                 <div class="footer-flex-container">
-                    <!-- Added wordpress -->
+                <hr class="decorate-line-footer decorate-line-footer_position_car-wp"/>
+                <hr class="decorate-line-footer decorate-line-footer_position_service-wp"/>
+                <hr class="decorate-line-footer decorate-line-footer_position_about-wp"/>
                         <?php wp_nav_menu( array( 'theme_location' => 'extra-menu' ) ); ?>
-                    <!-- Added wordpress -->
-                    <!--<div class="footer-column-1">
-                        <div class="footer-header footer-header_position_1">Наши машины<hr class="decorate-line-footer decorate-line-footer_position_car"/></div>
-                        <div class="footer-column__text-wrapper">
-                            <p class="footer__text">Mercedes S-Class</p>
-                            <p class="footer__text">Mercedes V-Class</p>
-                            <p class="footer__text">Mercedes E-Class</p>
-                            <p class="footer__text">Rolls-Royce Ghost</p>
-                            <p class="footer__text">Rolls-Royce Phantom</p>
-                            <p class="footer__text">Bentley Mulsanne</p>
-                        </div>
-                    </div>
-                    <div class="footer-column-2">
-                        <div class="footer-header footer-header_position_2">Наш сервис<hr class="decorate-line-footer decorate-line-footer_position_service"/></div>
-                        <div class="footer-column__text-wrapper">
-                            <p class="footer__text">Корпоративное такси</p>
-                            <p class="footer__text">Личный водитель</p>
-                            <p class="footer__text">Бизнес встречи</p>
-                            <p class="footer__text">Аэропорты</p>
-                            <p class="footer__text">События</p>
-                            <p class="footer__text">Экскурсии</p>
-                        </div>
-                    </div>
-                    <div class="footer-column-3">
-                        <div class="footer-header footer-header_position_3">О нас<hr class="decorate-line-footer decorate-line-footer_position_about"/></div>
-                        <div class="footer-column__text-wrapper">
-                            <p class="footer__text">Правила и условия</p>
-                            <p class="footer__text">О нас</p>
-                            <p class="footer__text">Аэропорты</p>
-                            <p class="footer__text">Контакты</p>
-                            <p class="footer__text">Блог</p>
-                            <p class="footer__text">Автопарк</p>
-                        </div>
-                    </div> -->
                     <div class="footer-column-4">
                         <button class="btn btn-footer" >
                             <span class="btn__text ">Сделать заказ</span>

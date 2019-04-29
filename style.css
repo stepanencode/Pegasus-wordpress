@@ -1105,7 +1105,7 @@ margin: 0 auto;
   max-height: 300px; }
 
 .footer-column-4 {
-  margin-top: 21px;
+  margin-top: 41px;
   text-align: right;
   max-width: 258px;
   width: 100%;
@@ -1189,7 +1189,7 @@ margin: 0 auto;
 @media (max-width: 1245px) {
   .copyright {
     padding-top: 0;
-    margin-top: 0;
+    margin-top: 25px;
     color: #9a9a9a;
     font-size: 0.825em; }
   .copyright p {
@@ -1200,7 +1200,7 @@ margin: 0 auto;
 @media (max-width: 975px) {
   .copyright {
     padding-top: 0;
-    margin-top: 0;
+    margin-top: 25px;
     color: #9a9a9a;
     font-size: 0.825em; }
   .copyright p {
@@ -1213,7 +1213,7 @@ margin: 0 auto;
     font-size: 0.825em;
     color: #9a9a9a;
     padding-top: 0;
-    margin-top: 0;
+    margin-top: 25px;
     margin-bottom: 0; }
   .copyright p {
     color: #9a9a9a; }
@@ -1324,5 +1324,105 @@ order: -1;
 
 .tours-wrap > div > p + p {
   padding-top: 4px; }
+
+.menu-item-has-children {
+  background: transparent;
+max-width: 400px;
+width: 100%;
+max-height: 300px;
+border: none;
+}
+
+.sub-menu {
+  border-right: 1px solid white;
+padding-top: 1em;
+max-height: 300px;
+}
+
+.sub-menu > li {
+border: none;
+background: transparent;
+
+}
+
+.sub-menu > li > a {
+display: inline-block;
+font-size: 0.9375em;
+font-family: 'Montserrat', sans-serif;
+text-transform: none;
+font-weight: 400;
+line-height: 0.625em;
+}
+
+.sub-menu > .menu-item {
+text-align: left;
+}
+
+#menu-item-63,
+#menu-item-65,
+#menu-item-66,
+#menu-item-67,
+#menu-item-68,
+#menu-item-69,
+#menu-item-72,
+#menu-item-73,
+#menu-item-74,
+#menu-item-75,
+#menu-item-76,
+#menu-item-71 {
+  max-width: 205px;
+  width: 100%;
+}
+
+#menu-item-62 > a,
+#menu-item-70 > a,
+#menu-item-77 > a {
+font-family: 'Romul', serif;
+margin-top: 1.8em;
+font-size: 1.1875em;
+text-align: left;
+font-weight: 400;
+margin-bottom: 15px;
+}
+
+.decorate-line-footer_position_car-wp {
+  position: absolute;
+  top: 81px;
+  left: 82px;
+}
+
+.decorate-line-footer_position_service-wp {
+  position: absolute;
+  top: 81px;
+  left: 435px;
+
+}
+
+
+.decorate-line-footer_position_about-wp {
+  position: absolute;
+  top: 81px;
+left: 760px;
+}
+
+@media (max-width: 1245px) {
+.decorate-line-footer{
+display: none;
+}
+}
+
+@media (max-width: 975px) {
+.footer-column-4 {
+    display:none; }
+}
+
+@media (max-width: 655px) {
+ .sub-menu {
+border: none;}
+
+.footer-column-4 {
+    display:block; }
+}
+}
 
 /*# sourceMappingURL=../css/app.css.map */
