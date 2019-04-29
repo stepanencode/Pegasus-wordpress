@@ -1335,8 +1335,31 @@ border: none;
 
 .sub-menu {
   border-right: 1px solid white;
-padding-top: 1em;
+padding-top: 41px;
 max-height: 300px;
+}
+
+.sub-menu__text {
+    font-size: 0.9375em;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: none;
+    font-weight: 400;
+    line-height: 0.625em; }
+
+.footer-merc-pos {
+  width: 203px;
+}
+
+.footer-ghost-pos {
+  width: 205px;
+}
+
+.footer-business-pos {
+  width: 203px
+}
+
+.footer-airport-pos {
+  width: 205px;
 }
 
 .sub-menu > li {
