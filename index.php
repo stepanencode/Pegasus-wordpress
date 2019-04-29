@@ -140,7 +140,14 @@
                 <h2>Tours</h2>
                 <div class="wrapper">
                     <div class="tours-wrap">
-                        <div class="tour-container">
+                        <!-- Added wordpress -->
+                        <?php
+                            if ( have_posts() ) : while ( have_posts() ) : the_post();
+                                get_template_part( 'excursion', get_post_format() );
+                            endwhile; endif;
+                        ?>
+                        <!-- Added wordpress -->
+                    <!--    <div class="tour-container">
                             <picture class="tours-image">
                                 <source srcset="<?php echo get_bloginfo('template_directory'); ?>/img/towers.png 1x, <?php echo get_bloginfo('template_directory'); ?>/img/retina/towers@2x.png 2x">
                                 <img src="<?php echo get_bloginfo('template_directory'); ?>/img/towers.png" alt="towers">
@@ -225,16 +232,20 @@
                             <button class="btn btn-more">
                                 <span class="btn__text ">Подробнее</span>
                             </button>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
-            </section>        </main>
+            </section>       
+             </main>
         <footer class="footer">
             <div class="background-city"></div>
             <div class="background-city_black"></div>
             <div class="footer-container">
                 <div class="footer-flex-container">
-                    <div class="footer-column-1">
+                    <!-- Added wordpress -->
+                        <?php wp_nav_menu( array( 'theme_location' => 'extra-menu' ) ); ?>
+                    <!-- Added wordpress -->
+                    <!--<div class="footer-column-1">
                         <div class="footer-header footer-header_position_1">Наши машины<hr class="decorate-line-footer decorate-line-footer_position_car"/></div>
                         <div class="footer-column__text-wrapper">
                             <p class="footer__text">Mercedes S-Class</p>
@@ -266,7 +277,7 @@
                             <p class="footer__text">Блог</p>
                             <p class="footer__text">Автопарк</p>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="footer-column-4">
                         <button class="btn btn-footer" >
                             <span class="btn__text ">Сделать заказ</span>

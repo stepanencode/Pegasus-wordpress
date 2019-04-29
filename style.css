@@ -500,9 +500,11 @@ img {
 
 .btn-more {
   border: 2px solid #2f2c34;
+width: 200px;
+margin: 0 auto;
   margin-top: 14px;
   height: 45px;
-  padding: 0 16.2%;
+  
   margin-bottom: 42px; }
 
 .btn-footer {
@@ -1262,7 +1264,65 @@ max-width: 215px;
 width: 100%;
 }
 
+@media (max-width: 655px) {
+  .menu {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    line-height: 1.4em; }
+    .menu-item {
+      font-family: 'Romul', serif;
+      background-color: #2f2c34;
+      width: 100%;
+      max-width: 205px;
+      vertical-align: middle;
+      text-align: center;
+      padding: 0;
+      border-right: none;
+      margin: 0 auto;
+      padding: 4px 0; }
+    .menu-item > a {
+      
+      color: white;
+      font-size: 0.9375em;
+      font-family: 'Romul', serif; }
+    }
 
+.tours-wrap > div{
+  max-width: 570px;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 auto;
+  position: relative;
+display: flex;
+flex-direction: column; 
+}
 
+.wp-post-image {
+order: -1;
+}
+
+.tours-wrap > div > h3 {
+  font-size: 1.5625em;
+  margin: 0 auto;
+  padding-top: 19px; 
+  font-family: Romul;
+  font-weight: 400;
+  }
+
+.tours-wrap > div > p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8125em;
+  text-transform: none;
+  padding-top: 28px; }
+
+.tours-wrap > div > p + p {
+  padding-top: 4px; }
 
 /*# sourceMappingURL=../css/app.css.map */
