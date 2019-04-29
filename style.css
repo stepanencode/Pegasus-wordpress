@@ -1346,20 +1346,14 @@ max-height: 300px;
     font-weight: 400;
     line-height: 0.625em; }
 
-.footer-merc-pos {
-  width: 203px;
+.sub-menu > .menu-item:nth-child(3) {
+max-width: 205px;
+width: 100%;
 }
 
-.footer-ghost-pos {
-  width: 205px;
-}
-
-.footer-business-pos {
-  width: 203px
-}
-
-.footer-airport-pos {
-  width: 205px;
+.sub-menu > .menu-item:nth-child(4) {
+max-width: 205px;
+width: 100%;
 }
 
 .sub-menu > li {
