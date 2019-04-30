@@ -72,6 +72,22 @@
             <section class="page-menu">
                 <h2>Main-menu</h2>
                 <div class="wrapper-nav">
+                    <div class="container-burger">
+                        <input id="toggle" type="checkbox">
+                        <label class="toggle-container" for="toggle">
+                            <span class="button button-toggle"></span>
+                        </label>
+                        <nav class="nav">
+                            <a class="nav-item" href="">Главная</a>
+                            <a class="nav-item" href="">Услуги</a>
+                            <a class="nav-item" href="">Автопарк</a>
+                            <a class="nav-item" href="">События</a>
+                            <a class="nav-item" href="">О нас</a>
+                            <a class="nav-item" href="">Контакты</a>
+                        </nav>
+                    </div>
+    
+
                     <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
                 </div>
             </section>            
