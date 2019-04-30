@@ -522,50 +522,17 @@ margin: 0 auto;
     border-bottom: 2px solid white; }
 
 .social-btn {
-  margin: 0 auto; }
-  .social-btn__item {
-    display: inline-block;
-    margin-left: 5%; }
-  .social-btn__item-insta {
-    background-image: url("img/instagram.svg");
-    background-size: cover;
-    width: 28px;
-    height: 28px; }
-    .social-btn__item-insta:hover {
-      background-image: url("img/instagram-gold.svg");
-      background-size: cover;
-      width: 28px;
-      height: 28px; }
-  .social-btn__item-fb {
-    background-image: url("img/facebook.svg");
-    background-size: cover;
-    width: 28px;
-    height: 28px; }
-    .social-btn__item-fb:hover {
-      background-image: url("img/facebook-gold.svg");
-      background-size: cover;
-      width: 28px;
-      height: 28px; }
-  .social-btn__item-google {
-    background-image: url("img/google-plus.svg");
-    background-size: cover;
-    width: 28px;
-    height: 28px; }
-    .social-btn__item-google:hover {
-      background-image: url("img/google-plus-gold.svg");
-      background-size: cover;
-      width: 28px;
-      height: 28px; }
-  .social-btn__item-linkedin {
-    background-image: url("img/linkedin.svg");
-    background-size: cover;
-    width: 28px;
-    height: 28px; }
-    .social-btn__item-linkedin:hover {
-      background-image: url("img/linkedin-gold.svg");
-      background-size: cover;
-      width: 28px;
-      height: 28px; }
+  margin: 0 auto;
+  font-size: 33px; }
+
+.fab {
+  color: white;
+}
+
+.fab:hover {
+  color: #d0aa8c;
+}
+  
 
 .header {
   position: relative; }
@@ -1375,32 +1342,7 @@ line-height: 0.625em;
 text-align: left;
 }
 
-#menu-item-63,
-#menu-item-65,
-#menu-item-66,
-#menu-item-67,
-#menu-item-68,
-#menu-item-69,
-#menu-item-72,
-#menu-item-73,
-#menu-item-74,
-#menu-item-75,
-#menu-item-76,
-#menu-item-71 {
-  max-width: 205px;
-  width: 100%;
-}
 
-#menu-item-62 > a,
-#menu-item-70 > a,
-#menu-item-77 > a {
-font-family: 'Romul', serif;
-margin-top: 1.8em;
-font-size: 1.1875em;
-text-align: left;
-font-weight: 400;
-margin-bottom: 15px;
-}
 
 .decorate-line-footer_position_car-wp {
   position: absolute;
